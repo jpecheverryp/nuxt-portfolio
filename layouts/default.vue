@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nuxt-link to="/">Hey</nuxt-link>
+    <nuxt-link to="/">Juan P Echeverry</nuxt-link>
     <nav>
       <ul>
         <nuxt-link to="/dev"><li>Dev</li></nuxt-link>
@@ -9,6 +9,9 @@
       </ul>
     </nav>
     <nuxt/>
+    <footer>
+      <p>&copy; {{new Date().getFullYear()}} Juan P Echeverry. All Rights Reserved.</p>
+    </footer>
   </div>
 </template>
 
