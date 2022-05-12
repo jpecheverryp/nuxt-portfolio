@@ -2,7 +2,7 @@
   <div>
     <h1>Hello!</h1>
     <h2>My name is Juan. I'm a Software Developer</h2>
-    
+    <p>Welcome to my little corner of the internet where I share a bit of who I am</p>
   </div>
 </template>
 
