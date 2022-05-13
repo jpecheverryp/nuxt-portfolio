@@ -8,7 +8,9 @@
         <nuxt-link to="/contact"><li>Contact</li></nuxt-link>
       </ul>
     </nav>
+    <div class="wrapper">
     <nuxt/>
+    </div>
     <footer>
       <p>&copy; {{new Date().getFullYear()}} Juan P Echeverry. All Rights Reserved.</p>
     </footer>
@@ -22,6 +24,11 @@
 </script>
 
 <style scoped>
+
+  .wrapper {
+    padding-bottom: 7rem;
+  }
+
   footer {
     border-top: 5px solid #0E9594;
     text-align: center;
@@ -30,7 +37,6 @@
     bottom: 0;
     background: #127475;
     color: white;
-    padding-bottom: 2rem;
-    padding-top: 1rem;
+    height: 4rem;
   }
 </style>
