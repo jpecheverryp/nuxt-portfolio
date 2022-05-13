@@ -21,6 +21,8 @@
   }
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+  footer {
+    text-align: center;
+  }
 </style>
