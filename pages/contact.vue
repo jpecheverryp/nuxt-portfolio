@@ -28,7 +28,9 @@
 </script>
 
 <style scoped>
-
+  h2 {
+    text-transform: uppercase;
+  }
   .sect__contact {
     display: flex;
     flex-direction: column;

@@ -23,6 +23,14 @@
 
 <style scoped>
   footer {
+    border-top: 5px solid #0E9594;
     text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: #127475;
+    color: white;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
   }
 </style>

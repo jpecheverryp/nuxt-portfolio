@@ -4,9 +4,6 @@ export default {
     titleTemplate: 'Juan P Echeverry %s',
     htmlAttrs: {
       lang: 'en'
-    },
-    bodyAttrs: {
-      style: ['my-style']
     }
   },
   buildModules: ['@nuxtjs/google-fonts'],
