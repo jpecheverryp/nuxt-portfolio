@@ -2,16 +2,24 @@
   <div class="sect__contact">
     <h2>Contact me</h2>
     <ul>
-      <li><a class="social-link" :href="linkedin" target="_blank">LinkedIn</a></li>
-      <li><a class="social-link" :href="github" target="_blank">Github</a></li>
-      <li><a class="social-link" :href="email">Email</a></li>
-
+      <li>
+        <link-button :isExternal="true" text="LinkedIn" :address="linkedin"  />
+      </li>
+      <li>
+        <link-button :isExternal="true" text="Github" :address="github"  />
+      </li>
+      <li>
+        <link-button :isExternal="true" text="Email" :address="email"  />
+      </li>
     </ul>
+    
   </div>
 </template>
-
 <script>
+import LinkButton from '../components/LinkButton.vue'
+
   export default {
+  components: { LinkButton },
     head() {
       return {
         title: '| Contact'
@@ -30,6 +38,7 @@
 <style scoped>
   h2 {
     text-transform: uppercase;
+    font-size: 2em;
   }
   .sect__contact {
     display: flex;
@@ -45,21 +54,10 @@
     flex-direction: column;
     gap: 1rem;
     width: fit-content;
-
-
   }
+  
   li {
     padding: 0;
     margin: 0;
-  }
-  
-  .social-link {
-    display: block;
-    padding: .5rem 1rem; 
-    background-color: #F2542D;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.2rem;
-    text-align: center;
   }
 </style>
