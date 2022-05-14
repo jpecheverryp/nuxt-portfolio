@@ -4,7 +4,9 @@
     <nuxt-link to="/">JPE</nuxt-link>
     <nav>
       <ul>
-        <li><nuxt-link to="/dev">Dev</nuxt-link></li>
+        <li><nuxt-link to="/">Home</nuxt-link></li>
+        <li><nuxt-link to="/about">About</nuxt-link></li>
+        <li><nuxt-link to="/dev">Portfolio</nuxt-link></li>
         <li><nuxt-link to="/blog">Blog</nuxt-link></li>
         <li><a href="https://github.com/jpecheverryp/nuxt-portfolio" target="_blank">Source</a></li>
         <li><nuxt-link to="/contact">Contact</nuxt-link></li>
