@@ -9,6 +9,7 @@ export default {
       charset: 'utf-8'
     }]
   },
+  modules: ['@nuxt/content'],
   buildModules: ['@nuxtjs/google-fonts'],
   css: ['~/assets/css/style.css'],
   googleFonts: {
