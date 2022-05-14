@@ -28,27 +28,4 @@
   }
 </script>
 
-<style scoped>
-  .btn {
-  font-size: 1.5em;
-  padding: .75rem 2rem;
-  border-radius: 0.25rem;
-  display: block;
-  border: 2px #F2542D solid;
-  cursor: pointer;
-  transition: .4s;
-  color: #F2542D;
-  background-image: linear-gradient(to left, white 50%, #F2542D 50%);
-  background-size: 200%;
-  background-position: 100%;
-  text-decoration: none;
-  text-align: center;
-  position: relative;
-}
-
-.btn:hover,
-.btn:focus {
-  background-position: 0;
-  color: white;
-}
-</style>
+<style scoped></style>

@@ -35,29 +35,4 @@ import LinkButton from '../components/LinkButton.vue'
   }
 </script>
 
-<style scoped>
-  h2 {
-    text-transform: uppercase;
-    font-size: 2em;
-  }
-  .sect__contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: fit-content;
-  }
-  
-  li {
-    padding: 0;
-    margin: 0;
-  }
-</style>
+<style></style>

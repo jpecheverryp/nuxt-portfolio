@@ -1,8 +1,11 @@
 <template>
   <div>
-    <h1>Hello!</h1>
-    <h2>My name is Juan. I'm a Software Developer</h2>
+    <h1>Hello there!</h1>
+    <h2>My name is Juan P Echeverry.<br> I'm a Software Developer</h2>
     <p>Welcome to my little corner of the internet where I share a bit of who I am</p>
+    <div class="pic-container">
+      <img class="profile-pic" src="~/static/images/profilePic.jpg" alt="">
+    </div>
   </div>
 </template>
 
@@ -12,6 +15,5 @@
   }
 </script>
 
-<style>
-  
+<style>  
 </style>

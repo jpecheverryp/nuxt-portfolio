@@ -1,6 +1,7 @@
 <template>
   <div>
-    <nuxt-link to="/">Juan P Echeverry</nuxt-link>
+    <header>
+    <nuxt-link to="/">JP E</nuxt-link>
     <nav>
       <ul>
         <nuxt-link to="/dev"><li>Dev</li></nuxt-link>
@@ -8,6 +9,7 @@
         <nuxt-link to="/contact"><li>Contact</li></nuxt-link>
       </ul>
     </nav>
+    </header>
     <div class="wrapper">
     <nuxt/>
     </div>
@@ -23,20 +25,4 @@
   }
 </script>
 
-<style scoped>
-
-  .wrapper {
-    padding-bottom: 7rem;
-  }
-
-  footer {
-    border-top: 5px solid #0E9594;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    background: #127475;
-    color: white;
-    height: 4rem;
-  }
-</style>
+<style></style>
