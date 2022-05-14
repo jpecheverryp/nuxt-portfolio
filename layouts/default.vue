@@ -1,12 +1,13 @@
 <template>
   <div>
     <header>
-    <nuxt-link to="/">JP E</nuxt-link>
+    <nuxt-link to="/">JPE</nuxt-link>
     <nav>
       <ul>
-        <nuxt-link to="/dev"><li>Dev</li></nuxt-link>
-        <a href="https://github.com/jpecheverryp/nuxt-portfolio" target="_blank"><li>Source</li></a>
-        <nuxt-link to="/contact"><li>Contact</li></nuxt-link>
+        <li><nuxt-link to="/dev">Dev</nuxt-link></li>
+        <li><nuxt-link to="/blog">Blog</nuxt-link></li>
+        <li><a href="https://github.com/jpecheverryp/nuxt-portfolio" target="_blank">Source</a></li>
+        <li><nuxt-link to="/contact">Contact</nuxt-link></li>
       </ul>
     </nav>
     </header>
