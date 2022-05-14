@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1>Hello there!</h1>
-    <h2>My name is Juan P Echeverry.<br> I'm a Software Developer</h2>
-    <p>Welcome to my little corner of the internet where I share a bit of who I am</p>
+    <h1>I bring ideas to reality</h1>
+    <h2>My name is Juan<br> I'm a Web Developer <br/>and Web Designer</h2>
+    
   </div>
 </template>
 
