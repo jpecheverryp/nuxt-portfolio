@@ -1,5 +1,8 @@
 <template>
   <div class="projectCard">
+    <div v-if="this.reversed" class="img-container">
+      <img src="https://via.placeholder.com/150x100" alt="">
+    </div>
     <div class="card-content">
       <h3>{{ projectData.title }}</h3>
       <p class="description">{{ projectData.description }}</p>
@@ -8,7 +11,7 @@
         <link-button text="Live Site" :address="projectData.liveLink" :isExternal="true" :isGhost="true" />
       </div>
     </div>
-    <div class="img-container">
+    <div v-if="!this.reversed" class="img-container">
       <img src="https://via.placeholder.com/150x100" alt="">
     </div>
   </div>
@@ -25,6 +28,11 @@
       projectData: {
         type: Object,
         required: true
+      },
+      reversed: {
+        default: false,
+        type: Boolean,
+        required: false
       }
     }
   }
@@ -32,7 +40,6 @@
 
 <style scoped>
   .projectCard {
-    border: 1px red solid;
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
@@ -67,7 +74,7 @@
     }
     .projectCard {
       display: grid;
-      grid-template-columns: 45% 50%;
+      grid-template-columns: 46% 46%;
       justify-content: space-between;
     }
     .buttons {

@@ -14,7 +14,7 @@
   <section>
     <h2>My Work</h2>
     <div class="projects" v-for="project in projects" :key="project.id">
-      <project-card :projectData="project" />
+      <project-card :projectData="project" :reversed="project.id % 2 === 0" />
     </div>
   </section>
 </div>
@@ -26,7 +26,7 @@
       return {
         projects: [
           {
-            id: 0,
+            id: 1,
             title: 'Project One',
             description: 'Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
             slug: 'project-one',
@@ -34,7 +34,7 @@
             
           },
           {
-            id: 1,
+            id: 2,
             title: 'Project Two',
             description: 'Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
             slug: 'project-two',
@@ -67,7 +67,7 @@
   }
 
   section {
-    margin-top: 4em;
+    margin-top: 10em;
   }
 
   .subheading {
@@ -100,8 +100,10 @@
   @media only screen and (min-width: 700px) {
     .container {
       display: grid;
-      grid-template-columns: 60% 40%;
-      padding: 0 1.5em;
+      grid-template-columns: 50% 40%;
+      justify-content: space-between;
+      margin: 0 auto;
+      max-width: 80rem;
     }
     h1, .subheading {
       text-align: left;
