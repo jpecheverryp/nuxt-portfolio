@@ -34,6 +34,7 @@
     text-align: center;
     font-weight: normal;
     line-height: 100%;
+    font-size: 2em;
     font-size: clamp(1.625em, 3vw, 3.25em) ;
   }
   .hero-img {
