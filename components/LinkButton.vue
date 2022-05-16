@@ -40,8 +40,12 @@
     color: black;
     padding: 0.875rem 1.125rem;
     border-radius: 0.625rem;
-    display: block;
     font-size: 1.375em;
+    width: 12rem;
+    height: 4rem;
+    text-align: center;
+    display: block;
+    border: #3CAF81 3px solid;
   }
   .is-ghost {
     background-color: white;
