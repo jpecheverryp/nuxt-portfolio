@@ -38,17 +38,15 @@
     text-decoration: none;
     background-color: #3CAF81;
     color: black;
-    padding: 0.875rem 1.125rem;
+    padding: 0.5em 1.125em;
     border-radius: 0.625rem;
     font-size: 1.375em;
-    width: 12rem;
-    height: 4rem;
     text-align: center;
     display: block;
-    border: #3CAF81 3px solid;
+    border: #3CAF81 .1em solid;
   }
   .is-ghost {
     background-color: white;
-    border: #3CAF81 3px solid;
+    border: #3CAF81 .15em solid;
   }
 </style>
