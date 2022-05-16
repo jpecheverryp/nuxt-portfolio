@@ -5,9 +5,9 @@
         <img @click="closeMenu" class="nav-icon close-menu" src="~/static/svg/exit.svg" alt="">
       <ul>
         <li><nuxt-link to="/">Home</nuxt-link></li>
-        <li><nuxt-link to="/about">About</nuxt-link></li>
+        <!-- <li><nuxt-link to="/about">About</nuxt-link></li> -->
         <li><nuxt-link to="/dev">Portfolio</nuxt-link></li>
-        <li><nuxt-link to="/blog">Blog</nuxt-link></li>
+        <!-- <li><nuxt-link to="/blog">Blog</nuxt-link></li> -->
         <li><nuxt-link to="/contact">Contact</nuxt-link></li>
       </ul>
     </nav>
