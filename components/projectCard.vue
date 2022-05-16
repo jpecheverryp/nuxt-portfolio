@@ -1,7 +1,9 @@
 <template>
   <div class="projectCard">
     <div v-if="this.reversed" class="img-container">
+      <nuxt-link :to="this.devLink">
       <img src="https://via.placeholder.com/150x100" alt="">
+      </nuxt-link>
     </div>
     <div class="card-content">
       <h3>{{ projectData.title }}</h3>
@@ -12,7 +14,9 @@
       </div>
     </div>
     <div v-if="!this.reversed" class="img-container">
+      <nuxt-link :to="this.devLink">
       <img src="https://via.placeholder.com/150x100" alt="">
+      </nuxt-link>
     </div>
   </div>
 </template>
