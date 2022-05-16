@@ -1,18 +1,6 @@
 <template>
   <div>
-    <header>
-    <nuxt-link to="/">Juan P Echeverry</nuxt-link>
-    <nav>
-      <ul>
-        <li><nuxt-link to="/">Home</nuxt-link></li>
-        <li><nuxt-link to="/about">About</nuxt-link></li>
-        <li><nuxt-link to="/dev">Portfolio</nuxt-link></li>
-        <li><nuxt-link to="/blog">Blog</nuxt-link></li>
-        
-        <li><nuxt-link to="/contact">Contact</nuxt-link></li>
-      </ul>
-    </nav>
-    </header>
+    <navbar/>
     <nuxt/>
     <footer>
       <p>&copy; {{new Date().getFullYear()}} Juan P Echeverry. All Rights Reserved.</p>
