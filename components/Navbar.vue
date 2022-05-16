@@ -74,8 +74,30 @@
   }
   .brand {
     color: #3CAF81;
-    font-size: 1.125em;
+    font-size: 1.5em;
+    font-size: clamp(1.125em, 1.66vw, 2em);
     text-decoration: none;
     font-weight: 700;
+  }
+
+  @media only screen and (min-width: 850px) {
+    nav {
+      position: relative;
+      width: auto;
+      height: auto;
+      transform: unset;
+      background: none;
+    }
+    nav ul {
+      flex-direction: row;
+    }
+    nav a {
+      color: black;
+      font-size: 1.125em;
+      font-size: clamp(1.125em, 1.33vw, 2em);
+    }
+    .nav-icon {
+      display: none;
+    }
   }
 </style>
