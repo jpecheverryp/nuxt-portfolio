@@ -11,24 +11,14 @@
     </div>
     <img class="hero-img" src="~/static/svg/mobile-wireframe.svg" alt="">
   </main>
-  <section>
-    <h2>My Work</h2>
-    <div class="projects" v-for="project in projects" :key="project.id">
-      <project-card :projectData="project" :reversed="project.id % 2 === 0" />
-    </div>
-  </section>
+  <work-section class="work-section" heading="My Work" />
 </div>
 </template>
 
 <script>
-  import projects from '~/data/projects'
 
   export default {
-    data() {
-      return {
-        projects: projects
-      }
-    }
+    
   }
 </script>
 
@@ -51,8 +41,8 @@
     text-align: center;
   }
 
-  section {
-    margin-top: 10em;
+  .work-section {
+    margin-top: 9em;
   }
 
   .subheading {
