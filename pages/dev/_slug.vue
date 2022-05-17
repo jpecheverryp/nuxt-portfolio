@@ -1,19 +1,45 @@
 <template>
-  <div>
-    <h2>{{ projectTitle }}</h2>
+  <div class="project-page">
+    <!-- <pre>{{ project }}</pre> -->
+    <nuxt-link class="nuxt-link" to="/dev">Back to Projects</nuxt-link>
+    <h2>{{ project.title }}</h2>
+    <img :src="project.img" :alt="project.title">
+    <p>{{ project.description }}</p>
+
   </div>
 </template>
 
 <script>
+  import projects from '~/data/projects'
+  
   export default {
     data() {
       return {
-        projectTitle: this.$route.path
+        project: projects.find(project => project.slug === this.$route.params.slug),
+
       }
     }
   }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+  h2 {
+    font-size: 2.5em;
+  }
 
+  .project-page {
+    padding: 2rem;
+  }
+  .nuxt-link {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+    color: #3CAF81;
+    font-size: 1.5em;
+  }
+  img {
+    max-width: 40rem;
+    margin: 0 auto;
+    display: block;
+  }
 </style>
