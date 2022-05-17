@@ -4,7 +4,8 @@
     "title": "Project One",
     "description": "Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     "slug": "project-one",
-    "liveLink": "https://github.com/"
+    "liveLink": "https://github.com/",
+    "img": "https://via.placeholder.com/150x100"
     
   },
   {
@@ -12,7 +13,7 @@
     "title": "Project Two",
     "description": "Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     "slug": "project-two",
-    "liveLink": "https://github.com/"
-    
+    "liveLink": "https://github.com/",
+    "img": "https://via.placeholder.com/150x100"
   }
 ]
