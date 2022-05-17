@@ -21,27 +21,12 @@
 </template>
 
 <script>
+  import projects from '~/data/projects'
+
   export default {
     data() {
       return {
-        projects: [
-          {
-            id: 1,
-            title: 'Project One',
-            description: 'Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-            slug: 'project-one',
-            liveLink: 'https://github.com/'
-            
-          },
-          {
-            id: 2,
-            title: 'Project Two',
-            description: 'Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-            slug: 'project-two',
-            liveLink: 'https://github.com/'
-            
-          },
-        ]
+        projects: projects
       }
     }
   }

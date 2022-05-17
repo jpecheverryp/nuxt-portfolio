@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Project One",
+    "description": "Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "slug": "project-one",
+    "liveLink": "https://github.com/"
+    
+  },
+  {
+    "id": 2,
+    "title": "Project Two",
+    "description": "Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "slug": "project-two",
+    "liveLink": "https://github.com/"
+    
+  }
+]
