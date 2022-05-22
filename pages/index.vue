@@ -54,10 +54,22 @@
     font-size: 2em;
     font-size: clamp(1.625em, 3vw, 3.25em) ;
   }
+  @keyframes slideFromRight {
+    0% {
+      transform: translateX(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
   .hero-img {
     width: 50%;
     display: block;
     margin: 4rem auto 0;
+    animation: 1s ease-in-out 0s 1 slideFromRight;
+    transition: .5s;
   }
   .cta-btns {
     display: flex;
