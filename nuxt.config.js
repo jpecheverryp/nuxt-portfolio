@@ -13,6 +13,13 @@ export default {
         name: 'description',
         content: 'My Personal Portfolio'
       }
+    ],
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico' 
+      }
     ]
   },
   modules: [ 

@@ -1,20 +1,22 @@
 [
   {
     "id": 1,
-    "title": "Project One",
-    "description": "Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-    "slug": "project-one",
-    "liveLink": "https://github.com/",
+    "title": "Digital Garden",
+    "description": "Note taking app where you can write, edit and delete public notes, future features include connecting notes with other notes in a similar way to obsidian.",
+    "slug": "digital-garden",
+    "liveLink": "https://obscure-crag-71873.herokuapp.com/",
+    "repoLink": "https://github.com/jpecheverryp/my-digital-garden",
     "img": "/images/digitalGarden.png"
     
     
   },
   {
     "id": 2,
-    "title": "Project Two",
-    "description": "Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-    "slug": "project-two",
-    "liveLink": "https://github.com/",
+    "title": "Employee Directory",
+    "description": "React application that can be used to track different employees and their contact information. They can also be sorted and searched.",
+    "slug": "employee-directory",
+    "liveLink": "https://jpecheverryp.github.io/react-employee-directory/",
+    "repoLink": "https://github.com/jpecheverryp/react-employee-directory",
     "img": "/images/employeeDirectory.png"
   }
 ]

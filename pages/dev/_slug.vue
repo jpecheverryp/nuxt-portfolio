@@ -4,6 +4,9 @@
     <nuxt-link class="nuxt-link" to="/dev">Back to Projects</nuxt-link>
     <h2 class="heading-2">{{ project.title }}</h2>
     <nuxt-img :src="project.img" />
+    <hr>
+    <p>Website: <a :href="project.liveLink" target="_blank">Live Site</a></p>
+    <p>Repository: <a :href="project.repoLink" target="_blank">GitHub Repository</a></p>
     <p>{{ project.description }}</p>
 
   </div>
@@ -26,7 +29,12 @@
   h2 {
     font-size: 2.5em;
   }
-
+  p {
+    margin: .75rem;
+  }
+  a {
+    color: #3CAF81;
+  }
   .project-page {
     padding: 2rem;
   }
