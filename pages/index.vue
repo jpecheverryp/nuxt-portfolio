@@ -24,7 +24,7 @@
 
 <style>
   .container {
-    padding: 0 1em;
+    padding: 0 3em;
   }
   h1 {
     font-size: 3em;

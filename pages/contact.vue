@@ -1,25 +1,13 @@
 <template>
   <div class="sect__contact">
     <h2 class="heading-2">Contact me</h2>
-    <ul>
-      <li>
-        <link-button :isExternal="true" text="LinkedIn" :address="linkedin"  />
-      </li>
-      <li>
-        <link-button :isExternal="true" text="Github" :address="github"  />
-      </li>
-      <li>
-        <link-button :isExternal="true" text="Email" :address="email"  />
-      </li>
-    </ul>
-    
+    <p>Send me an email at <a href="mailto:jpecheverryp@gmail.com">jpecheverryp@gmail.com</a><br>Or use the form below </p>
+    <contact-form />
   </div>
 </template>
 <script>
-import LinkButton from '../components/LinkButton.vue'
 
   export default {
-  components: { LinkButton },
     head() {
       return {
         title: '| Contact'
@@ -35,4 +23,8 @@ import LinkButton from '../components/LinkButton.vue'
   }
 </script>
 
-<style></style>
+<style>
+  label {
+    display: block;
+  }
+</style>
