@@ -1,6 +1,6 @@
 <template>
-  <div class="projectCard">
-    <div v-if="this.reversed" class="img-container">
+  <div :class="[this.reversed ? 'reversed' : '' , 'projectCard']">
+    <div class="img-container">
       <nuxt-link :to="this.devLink">
       <img :src="projectData.img" :alt="projectData.title">
       </nuxt-link>
@@ -12,11 +12,6 @@
         <link-button text="Learn More" :address="this.devLink" />
         <link-button text="Live Site" :address="projectData.liveLink" :isExternal="true" :isGhost="true" />
       </div>
-    </div>
-    <div v-if="!this.reversed" class="img-container">
-      <nuxt-link :to="this.devLink">
-      <img :src="projectData.img" :alt="projectData.title">
-      </nuxt-link>
     </div>
   </div>
 </template>
@@ -45,7 +40,7 @@
 <style scoped>
   .projectCard {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 100%;
   }
   .buttons {
@@ -80,7 +75,13 @@
       display: grid;
       grid-template-columns: 46% 46%;
       justify-content: space-between;
+      grid-auto-flow: dense;
     }
+
+    .projectCard.reversed div:first-child {
+      grid-column: 2;
+    }
+    
     .buttons {
       justify-content: flex-start;
     }
