@@ -1,6 +1,6 @@
 <template>
   <div class="sect__contact">
-    <h2>Contact me</h2>
+    <h2 class="heading-2">Contact me</h2>
     <ul>
       <li>
         <link-button :isExternal="true" text="LinkedIn" :address="linkedin"  />

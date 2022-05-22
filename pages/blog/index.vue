@@ -1,12 +1,31 @@
 <template>
   <div>
-    <h2>BLOG</h2>
+    <h2 class="heading-2">My Blog</h2>
+  <pre>{{articles}}</pre>
+  <ul>
+    <li v-for="blog in articles" :key="blog.slug">
+      <nuxt-link :to="`/blog/${blog.slug}`">
+      <div>
+        <h3>{{ blog.title }}</h3>
+      </div>
+      </nuxt-link>
+    </li>
+  </ul>
   </div>
 </template>
 
 <script>
   export default {
-    
+    async asyncData({ $content, params }) {
+      const articles = await $content('articles')
+      .only(['title', 'slug'])
+      .sortBy('createdAt', 'asc')
+      .fetch()
+
+      return {
+        articles
+      }
+    }
   }
 </script>
 

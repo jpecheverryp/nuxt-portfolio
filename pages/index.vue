@@ -34,7 +34,7 @@
     line-height: 100%;
     font-weight: bold;
   }
-  h2 {
+  .heading-2 {
     font-size: 2em;
     font-size: clamp(2em, 4vw, 4em);
 

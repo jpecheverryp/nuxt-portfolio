@@ -1,6 +1,6 @@
 <template>
     <section>
-    <h2>{{ heading }}</h2>
+    <h2 class="heading-2">{{ heading }}</h2>
     <div class="projects" v-for="project in projects" :key="project.id">
       <project-card :projectData="project" :reversed="project.id % 2 === 0" />
     </div>
@@ -26,7 +26,7 @@
 </script>
 
 <style scoped>
-  h2 {
+  .heading-2 {
     margin-bottom: 2em;
   }
 </style>
