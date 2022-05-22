@@ -1,5 +1,6 @@
 export default {
   components: true,
+  target: 'static',
   head: {
     titleTemplate: 'Juan P Echeverry %s',
     htmlAttrs: {
