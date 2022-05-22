@@ -1,7 +1,6 @@
 <template>
   <div>
     <h2 class="heading-2">My Blog</h2>
-  <pre>{{articles}}</pre>
   <ul>
     <li v-for="blog in articles" :key="blog.slug">
       <nuxt-link :to="`/blog/${blog.slug}`">
@@ -29,6 +28,8 @@
   }
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+  a {
+    color: #3CAF81;
+  }
 </style>

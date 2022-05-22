@@ -1,5 +1,6 @@
 <template>
   <div class="blog-post">
+    <nuxt-link class="back-link" to="/blog">Back to Articles</nuxt-link>
     <h1>{{ article.title }}</h1>
     <p>Article created: {{ formatDate(article.createdAt) }}</p>
     <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
@@ -36,5 +37,8 @@
   }
   h2 {
     font-size: 2rem;
+  }
+  .back-link {
+    color: #3CAF81;
   }
 </style>
