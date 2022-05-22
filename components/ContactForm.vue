@@ -14,7 +14,7 @@
         <label for="message">Message*</label>
         <textarea name="message" id="message" cols="30" rows="10"></textarea>
       </div>
-      <input type="submit" value="Send Message">
+      <input class="send-msg" type="submit" value="Send Message">
     </form>
   </div>
   
@@ -26,6 +26,34 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+  label {
+    display: block;
+  }
+  .contact-section {
+    text-align: center;
+  }
+  form {
+    width: fit-content;
+    margin: 0 auto 6rem;
+  }
+  .input-control {
+    text-align: left;
+  }
+  h3 {
+    color: #3CAF81;
+  }
+  input {
+    width: 100%;
+    padding: .5rem .75rem;
+  }
+  textarea {
+    resize: vertical;
+  }
+  .send-msg {
+    background-color: #3CAF81;
+    border: none;
+    border-radius: 5px;
 
+  }
 </style>

@@ -12,6 +12,8 @@
     <img class="hero-img" src="~/static/svg/mobile-wireframe.svg" alt="">
   </main>
   <work-section class="work-section" heading="My Work" />
+  <h2 class="heading-2">Contact me</h2>
+  <contact-form />
 </div>
 </template>
 
