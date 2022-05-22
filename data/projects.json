@@ -5,7 +5,8 @@
     "description": "Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     "slug": "project-one",
     "liveLink": "https://github.com/",
-    "img": "https://via.placeholder.com/150x100"
+    "img": "/images/digitalGarden.png"
+    
     
   },
   {
@@ -14,6 +15,6 @@
     "description": "Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     "slug": "project-two",
     "liveLink": "https://github.com/",
-    "img": "https://via.placeholder.com/150x100"
+    "img": "/images/employeeDirectory.png"
   }
 ]

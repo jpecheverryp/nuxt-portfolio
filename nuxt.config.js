@@ -15,9 +15,12 @@ export default {
       }
     ]
   },
-  modules: ['@nuxt/content'],
+  modules: [ 
+    '@nuxt/content',
+    '@nuxt/image'
+  ],
   buildModules: [
-    '@nuxtjs/google-fonts', 
+    '@nuxtjs/google-fonts',
   ],
   css: ['~/assets/css/style.css'],
   googleFonts: {

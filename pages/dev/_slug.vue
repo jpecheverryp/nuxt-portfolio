@@ -2,8 +2,8 @@
   <div class="project-page">
     <!-- <pre>{{ project }}</pre> -->
     <nuxt-link class="nuxt-link" to="/dev">Back to Projects</nuxt-link>
-    <h2>{{ project.title }}</h2>
-    <img :src="project.img" :alt="project.title">
+    <h2 class="heading-2">{{ project.title }}</h2>
+    <nuxt-img :src="project.img" />
     <p>{{ project.description }}</p>
 
   </div>
