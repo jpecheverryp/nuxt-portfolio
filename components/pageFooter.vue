@@ -30,7 +30,7 @@
   a {
     text-decoration: none;
     color: black;
-    background-image: linear-gradient(to bottom, white 50%, #7ED3B1 50%);
+    background-image: linear-gradient(to bottom, #eee 50%, #7ED3B1 50%);
     background-size: 100% 200%;
     background-position: 0 40%;
     transition: .4s;
