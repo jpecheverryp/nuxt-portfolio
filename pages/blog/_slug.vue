@@ -2,8 +2,8 @@
   <div class="blog-post">
     <nuxt-link class="back-link" to="/blog">Back to Articles</nuxt-link>
     <h1>{{ article.title }}</h1>
-    <p>Article created: {{ formatDate(article.createdAt) }}</p>
-    <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
+    <p>Article created: {{ formatDate(article.gitCreatedAt) }}</p>
+    <p>Article last updated: {{ formatDate(article.gitUpdatedAt) }}</p>
 
     <nuxt-content :document="article" class="nuxt-content" />
   </div>

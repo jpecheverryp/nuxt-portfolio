@@ -23,7 +23,11 @@ export default {
       }
     ]
   },
-  modules: [ 
+  modules: [
+    ['nuxt-content-git', {
+      createdAtName: 'gitCreatedAt',
+      updatedAtName: 'gitUpdatedAt',
+    }],
     '@nuxt/content',
     '@nuxt/image'
   ],
