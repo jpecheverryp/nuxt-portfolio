@@ -18,7 +18,7 @@
     async asyncData({ $content, params }) {
       const articles = await $content('articles')
       .only(['title', 'slug'])
-      .sortBy('createdAt', 'desc')
+      .sortBy('gitCreatedAt', 'desc')
       .fetch()
 
       return {
