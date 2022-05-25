@@ -1,9 +1,10 @@
 <template>
   <div class="blog-post">
     <nuxt-link class="back-link" to="/blog">Back to Articles</nuxt-link>
+    <p class="align-left">Article created: {{ formatDate(article.gitCreatedAt) }}</p>
+    <p class="align-left">Article last updated: {{ formatDate(article.gitUpdatedAt) }}</p>
+    <hr>
     <h1>{{ article.title }}</h1>
-    <p>Article created: {{ formatDate(article.gitCreatedAt) }}</p>
-    <p>Article last updated: {{ formatDate(article.gitUpdatedAt) }}</p>
 
     <nuxt-content :document="article" class="nuxt-content" />
   </div>
@@ -40,5 +41,8 @@
   }
   .back-link {
     color: #3CAF81;
+  }
+  .align-left {
+    text-align: left;
   }
 </style>
