@@ -1,6 +1,4 @@
 node_modules
 .nuxt
 .DS_Store
-
-# Building
 pages/about.vue

@@ -7,7 +7,7 @@
       I mainly use frontend technologies such as HTML, CSS, JavaScript, and cool JS frameworks such as React, Next, Vue and Nuxt.<br/>
       I also have implemented backend solutions developing APIs and setting up databases with PostgreSQL and MySQL.<br/>
       When I'm not coding I love to learn about personal finances, and I love indoor rock climbing, haven't tried outdoor climbing yet!!
-      </p>
+      </p>  
       <nuxt-img class="profile-pic" src="images/profilePic.jpg" />
     </div>
     <!-- TODO -->
