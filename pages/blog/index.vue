@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="heading-2">My Blog</h2>
+    <h2 class="text-3xl text-center">My Blog</h2>
   <ul>
     <li v-for="blog in articles" :key="blog.slug">
       <nuxt-link :to="`/blog/${blog.slug}`">

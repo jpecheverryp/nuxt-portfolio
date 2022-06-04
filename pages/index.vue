@@ -12,7 +12,7 @@
     <img class="hero-img" src="~/static/svg/mobile-wireframe.svg" alt="">
   </main>
   <work-section class="work-section" heading="My Work" />
-  <h2 class="heading-2">Contact me</h2>
+  <h2 class="text-3xl text-center">Contact me</h2>
   <contact-form />
 </div>
 </template>
@@ -39,7 +39,6 @@
   .heading-2 {
     font-size: 2em;
     font-size: clamp(2em, 4vw, 4em);
-
     text-align: center;
   }
 

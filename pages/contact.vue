@@ -1,7 +1,7 @@
 <template>
   <div class="sect__contact">
-    <h2 class="heading-2">Contact me</h2>
-    <div class="contact-text">
+    <h2 class="text-3xl text-center">Contact me</h2>
+    <div class="text-center">
       <p>Send me an email at <a href="mailto:jpecheverryp@gmail.com">jpecheverryp@gmail.com</a><br>Or use the form below </p>
     </div>
     <contact-form />

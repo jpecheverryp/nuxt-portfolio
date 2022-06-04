@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="heading-2">About</h2>
+    <h2 class="text-3xl text-center">About</h2>
     <div class="two-cols">
       <p>
       My name is Juan Pablo Echeverry, I am a software developer with a passion for coding and solving problems.<br/>

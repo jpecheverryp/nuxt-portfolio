@@ -2,7 +2,7 @@
   <div class="project-page">
     <!-- <pre>{{ project }}</pre> -->
     <nuxt-link class="nuxt-link" to="/dev">Back to Projects</nuxt-link>
-    <h2 class="heading-2">{{ project.title }}</h2>
+    <h2 class="text-3xl text-center">{{ project.title }}</h2>
     <nuxt-img :src="project.img" />
     <hr>
     <p>Website: <a :href="project.liveLink" target="_blank">Live Site</a></p>
