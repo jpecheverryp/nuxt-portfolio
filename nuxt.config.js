@@ -29,7 +29,8 @@ export default {
       updatedAtName: 'gitUpdatedAt',
     }],
     '@nuxt/content',
-    '@nuxt/image'
+    '@nuxt/image',
+    '@nuxtjs/tailwindcss'
   ],
   buildModules: [
     '@nuxtjs/google-fonts',
@@ -40,4 +41,5 @@ export default {
       'Poppins': [400, 700]
     }
   },
+  devServerHandlers: [],
 }
