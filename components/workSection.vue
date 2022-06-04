@@ -1,8 +1,8 @@
 <template>
     <section>
-    <h2 class="mb-8 text-3xl text-center">{{ heading }}</h2>
-    <div class="projects" v-for="project in projects" :key="project.id">
-      <project-card :projectData="project" :reversed="project.id % 2 === 0" />
+    <h2 class="mb-8 text-4xl text-center ">{{ heading }}</h2>
+    <div class="projects" v-for="project in projects" >
+      <project-card :projectData="project" :key="project.id" :reversed="project.id % 2 === 0" />
     </div>
   </section>
 </template>
