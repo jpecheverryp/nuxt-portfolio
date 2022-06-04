@@ -1,17 +1,17 @@
 <template>
-  <header>
-    <nuxt-link class="brand" to="/">Juan P Echeverry</nuxt-link>
-    <nav ref="navMenu">
-        <img @click="closeMenu" class="nav-icon close-menu" src="~/static/svg/exit.svg" alt="">
-      <ul>
-        <li><nuxt-link to="/">Home</nuxt-link></li>
-        <!-- <li><nuxt-link to="/about">About</nuxt-link></li> -->
-        <li><nuxt-link to="/dev">Portfolio</nuxt-link></li>
-        <!-- <li><nuxt-link to="/blog">Blog</nuxt-link></li> -->
-        <li><nuxt-link to="/contact">Contact</nuxt-link></li>
+  <header class="flex justify-between items-center px-6 py-4 m-0 relative">
+    <nuxt-link class="text-brand text-xl font-bold" to="/">Juan P Echeverry</nuxt-link>
+    <nav class="flex flex-col items-end fixed right-0 top-0 bg-brand h-screen w-1/2 p-5 text-right gap-12 translate-x-full transition duration-300 md:relative md:w-auto md:h-auto md:translate-x-0 md:bg-transparent" ref="navMenu">
+        <img @click="closeMenu" class="w-8 cursor-pointer close-menu md:hidden" src="~/static/svg/exit.svg" alt="">
+      <ul class="list-none p-0 m-0 flex flex-col gap-4 md:flex-row">
+        <nav-link route="/" text="home" />
+        <!-- <nav-link route="/about" text="about" /> -->
+        <nav-link route="/dev" text="portfolio" />
+        <!-- <nav-link route="/blog" text="blog" /> -->
+        <nav-link route="/contact" text="contact" />
       </ul>
     </nav>
-        <img @click="openMenu" class="nav-icon" src="~/static/svg/menu.svg" alt="">
+        <img @click="openMenu" class="w-8 cursor-pointer md:hidden" src="~/static/svg/menu.svg" alt="">
     </header>
 </template>
 
@@ -28,76 +28,3 @@
     }
   }
 </script>
-
-<style scoped>
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 1.25em;
-    margin: 0;
-    position: relative;
-  }
-  .nav-icon {
-    width: 2rem;
-    cursor: pointer;
-  }
-  nav {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    position: fixed;
-    right: 0;
-    top: 0;
-    background: #3CAF81;
-    height: 100vh;
-    width: 50%;
-    padding: 2em;
-    text-align: right;
-    gap: 3em;
-    transform: translateX(100%);
-    transition: transform .3s;
-  }
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5em;
-  }
-  .brand {
-    color: #3CAF81;
-    font-size: 1.5em;
-    font-size: clamp(1.125em, 1.66vw, 2em);
-    text-decoration: none;
-    font-weight: 700;
-  }
-
-  @media only screen and (min-width: 850px) {
-    nav {
-      position: relative;
-      width: auto;
-      height: auto;
-      transform: unset;
-      background: none;
-    }
-    nav ul {
-      flex-direction: row;
-    }
-    nav a {
-      color: black;
-      font-size: 1.125em;
-      font-size: clamp(1.125em, 1.33vw, 2em);
-    }
-    .nav-icon {
-      display: none;
-    }
-  }
-</style>
