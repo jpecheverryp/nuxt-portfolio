@@ -24,3 +24,11 @@
     }
   }
 </script>
+
+<style scoped>
+.projects {
+    width: clamp(2rem, 90vw, 50rem) ;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }</style>

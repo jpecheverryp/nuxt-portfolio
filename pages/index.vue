@@ -1,58 +1,30 @@
 <template>
 <div class="page">
-  <main class="container">
+  <main class="px-12 md:grid md:grid-cols-2 md:justify-between md:my-0 md:mx-auto md:max-w-7xl">
     <div class="hero__content">
-      <h1>I bring ideas to reality</h1>
-      <p class="subheading">My name is Juan<br> I'm a Full Stack Developer <br/>and Web Designer</p>
-      <div class="cta-btns">
+      <h1 class="text-5xl text-center uppercase font-bold md:text-left">I bring ideas to reality</h1>
+      <p class="text-center font-normal text-2xl md:text-left">My name is Juan<br> I'm a Full Stack Developer <br/>and Web Designer</p>
+      <div class="flex flex-wrap my-6 mx-auto gap-8 gap-y-4 justify-center md:justify-start md:mt-24">
         <nuxt-link-button text="See my Work" address="/dev" />
         <nuxt-link-button text="Contact me" address="/contact" :isGhost="true"  />
       </div>
     </div>
-    <img class="hero-img" src="~/static/svg/mobile-wireframe.svg" alt="">
+    <img class="hero-animation w-1/2 block mt-16 mx-auto mb-0" src="~/static/svg/mobile-wireframe.svg" alt="">
   </main>
-  <work-section class="work-section" heading="My Work" />
+  <work-section class="mt-36" heading="My Work" />
   <h2 class="text-3xl text-center">Contact me</h2>
   <contact-form />
 </div>
 </template>
 
 <script>
-
   export default {
     
   }
+
 </script>
 
 <style>
-  .container {
-    padding: 0 3em;
-  }
-  h1 {
-    font-size: 3em;
-    font-size: clamp(2.5em, 5.5vw, 5em);
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 100%;
-    font-weight: bold;
-  }
-  .heading-2 {
-    font-size: 2em;
-    font-size: clamp(2em, 4vw, 4em);
-    text-align: center;
-  }
-
-  .work-section {
-    margin-top: 9em;
-  }
-
-  .subheading {
-    text-align: center;
-    font-weight: normal;
-    line-height: 100%;
-    font-size: 2em;
-    font-size: clamp(1.625em, 3vw, 3.25em) ;
-  }
   @keyframes slideFromRight {
     0% {
       transform: translateX(50%);
@@ -63,42 +35,8 @@
       opacity: 1;
     }
   }
-  .hero-img {
-    width: 50%;
-    display: block;
-    margin: 4rem auto 0;
+  .hero-animation {
     animation: 1s ease-in-out 0s 1 slideFromRight;
     transition: .5s;
   }
-  .cta-btns {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    gap: 2rem;
-    row-gap: 1rem;
-    justify-content: center;
-  }
-  .projects {
-    width: clamp(2rem, 90vw, 50rem) ;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 6rem;
-  }
-
-  @media only screen and (min-width: 700px) {
-    .container {
-      display: grid;
-      grid-template-columns: 50% 40%;
-      justify-content: space-between;
-      margin: 0 auto;
-      max-width: 80rem;
-    }
-    h1, .subheading {
-      text-align: left;
-    }
-    .cta-btns {
-      justify-content: flex-start;
-    }
-  }
-
 </style>
