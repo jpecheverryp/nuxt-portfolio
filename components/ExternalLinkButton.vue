@@ -1,15 +1,10 @@
 <template>
-<div v-if="isExternal">
-  <a :class="[isGhost ? 'is-ghost' : '', 'btn']" :href="address" target="_blank">{{text}}</a>
-</div>
-<div v-else>
-  <nuxt-link :class="[isGhost ? 'is-ghost' : '', 'btn']" :to="address">{{text}}</nuxt-link>
-</div>
+  <a :class="[isGhost ? 'is-ghost' : '', 'btn']" :href="address" target="_blank">{{ text }}</a>
 </template>
 
 <script>
   export default {
-    name: 'link-button',
+    name: 'external-link-button',
     props: {
       text: {
         type: String,
@@ -18,11 +13,6 @@
       address: {
         type: String,
         required: true
-      },
-      isExternal: {
-        default: false,
-        type: Boolean,
-        required: false
       },
       isGhost: {
         default: false,

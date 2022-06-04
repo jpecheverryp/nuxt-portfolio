@@ -5,8 +5,8 @@
       <h1>I bring ideas to reality</h1>
       <p class="subheading">My name is Juan<br> I'm a Full Stack Developer <br/>and Web Designer</p>
       <div class="cta-btns">
-        <link-button text="See my Work" address="/dev" :isExternal="false"  />
-        <link-button text="Contact me" address="/contact" :isExternal="false" :isGhost="true"  />
+        <nuxt-link-button text="See my Work" address="/dev" />
+        <nuxt-link-button text="Contact me" address="/contact" :isGhost="true"  />
       </div>
     </div>
     <img class="hero-img" src="~/static/svg/mobile-wireframe.svg" alt="">
