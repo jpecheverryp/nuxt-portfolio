@@ -1,5 +1,5 @@
 <template>
-  <a target="_blank" :href="route">{{ text }}</a>
+  <a class="underline text-brand" target="_blank" :href="route">{{ text }}</a>
 </template>
 
 <script>
@@ -16,19 +16,3 @@
     }
   }
 </script>
-
-<style scoped>
-  
-  a {
-    text-decoration: none;
-    color: black;
-    background-image: linear-gradient(to bottom, #eee 50%, #7ED3B1 50%);
-    background-size: 100% 200%;
-    background-position: 0 40%;
-    transition: .4s;
-    
-  }
-  a:hover {
-    background-position: 0 90%;
-  }
-</style>
