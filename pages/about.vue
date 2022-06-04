@@ -20,18 +20,3 @@
     
   }
 </script>
-
-<style scoped>
-  .profile-pic {
-    max-width: 50%;
-  }
-
-
-  @media only screen and (min-width: 700px) {
-    .two-cols {
-      display: flex;
-      flex-basis: 0;
-      flex-grow: 1;
-    }
-  }
-</style>

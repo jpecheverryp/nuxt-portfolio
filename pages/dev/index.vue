@@ -13,7 +13,3 @@ import workSection from '../../components/workSection.vue'
     }
   }
 </script>
-
-<style lang="scss" scoped>
-
-</style>
