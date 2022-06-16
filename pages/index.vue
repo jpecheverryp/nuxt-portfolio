@@ -19,7 +19,7 @@
         alt="">
     </main>
     <work-section class="" heading="My Work" />
-    <h2 class="text-3xl text-center">Contact me</h2>
+
     <contact-form />
   </div>
 </template>
