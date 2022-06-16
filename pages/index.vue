@@ -3,9 +3,10 @@
     <main class="md:grid md:grid-cols-2 md:justify-between md:my-0 md:mx-auto md:max-w-7xl">
       <div class="hero__content h-screen flex flex-col justify-center ">
         <div class="flex flex-col gap-6">
-          <h1 class="text-6xl text-center uppercase font-bold md:text-left">I'm <span class="text-brand">Juan</span> P
+          <h1 class="text-5xl md:text-6xl text-center uppercase font-bold md:text-left">I'm <span
+              class="text-brand">Juan</span> P
             Echeverry</h1>
-          <p class="text-center font-normal text-2xl md:text-left">I'm a Full Stack Developer
+          <p class="text-center font-normal text-xl md:text-2xl md:text-left">I'm a Full Stack Developer
             <br />and Web Designer
           </p>
         </div>
