@@ -7,7 +7,7 @@
       <img @click="closeMenu" class="w-8 cursor-pointer close-menu md:hidden" src="~/static/svg/exit.svg" alt="">
       <ul class="list-none p-0 m-0 flex flex-col gap-4 md:flex-row">
         <nav-link route="/" text="home" />
-        <!-- <nav-link route="/about" text="about" /> -->
+        <nav-link route="/about" text="about" />
         <nav-link route="/dev" text="portfolio" />
         <!-- <nav-link route="/blog" text="blog" /> -->
         <nav-link route="/#contact" text="contact" />
