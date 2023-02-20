@@ -1,14 +1,12 @@
 [
   {
     "id": 1,
-    "title": "Digital Garden",
-    "description": "Note taking app where you can write, edit and delete public notes, future features include connecting notes with other notes in a similar way to obsidian.",
-    "slug": "digital-garden",
-    "liveLink": "https://obscure-crag-71873.herokuapp.com/",
-    "repoLink": "https://github.com/jpecheverryp/my-digital-garden",
-    "img": "/images/digitalGarden.png"
-    
-    
+    "title": "YourPlaces",
+    "description": "MERN app where users can upload the places they have visited with a short description and an image",
+    "slug": "your-places",
+    "liveLink": "https://jpe-places.netlify.app",
+    "repoLink": "https://github.com/jpecheverryp/mern-tutorial-udemy",
+    "img": "/images/yourPlaces.png"
   },
   {
     "id": 2,
