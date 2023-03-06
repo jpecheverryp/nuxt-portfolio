@@ -4,19 +4,15 @@
       <div class="hero__content h-screen flex flex-col justify-center ">
         <div class="flex flex-col gap-6">
           <h1 class="text-5xl md:text-6xl text-center uppercase font-bold md:text-left">I'm <span
-              class="text-brand">Juan</span> P
-            Echeverry</h1>
-          <p class="text-center font-normal text-xl md:text-2xl md:text-left">I'm a Full Stack Developer
-            <br />and Web Designer
-          </p>
+              class="text-brand">Juan</span> P Echeverry</h1>
+          <p class="text-center font-normal text-xl md:text-2xl md:text-left">JavaScript Developer</p>
         </div>
         <div class="flex flex-wrap my-6 gap-8 gap-y-4 justify-center  md:justify-start md:mt-24">
           <nuxt-link-button text="See my Work" address="/dev" />
-          <nuxt-link-button text="Contact me" address="/contact" :isGhost="true" />
+          <nuxt-link-button text="Contact me" address="/#contact" :isGhost="true" />
         </div>
       </div>
-      <img class="hidden md:block hero-animation w-1/2 mt-16 mx-auto mb-0" src="~/static/svg/mobile-wireframe.svg"
-        alt="">
+      <img class="hidden md:block hero-animation w-1/2 mt-16 mx-auto mb-0" src="~/static/svg/mobile-wireframe.svg" alt="">
     </main>
     <work-section class="" heading="My Work" />
 
