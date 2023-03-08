@@ -10,11 +10,11 @@
   },
   {
     "id": 2,
-    "title": "Employee Directory",
-    "description": "React application that can be used to track different employees and their contact information. They can also be sorted and searched.",
-    "slug": "employee-directory",
-    "liveLink": "https://jpecheverryp.github.io/react-employee-directory/",
-    "repoLink": "https://github.com/jpecheverryp/react-employee-directory",
-    "img": "/images/employeeDirectory.png"
+    "title": "Habit Tracker",
+    "description": "React application that lets users track record of their habit progress, it stores data on local storage",
+    "slug": "habit-tracker",
+    "liveLink": "https://jpe-habit-tracker.netlify.app",
+    "repoLink": "https://github.com/jpecheverryp/habit-tracker",
+    "img": "/images/habitTracker.png"
   }
 ]
