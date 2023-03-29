@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="max-w-5xl px-8 mx-auto">
     <navbar/>
     <nuxt/>
     <page-footer />

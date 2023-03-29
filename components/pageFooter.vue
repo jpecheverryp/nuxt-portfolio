@@ -4,6 +4,7 @@
       
       <p >This is an <footer-link route="https://github.com/jpecheverryp/nuxt-portfolio" text="open source" /> Portfolio created with <footer-link route="https://nuxtjs.org/" text="NuxtJS" />.</p>
       <p>&copy; {{new Date().getFullYear()}} Juan P Echeverry. All Rights Reserved.</p>
+      <img class="max-w-[50px] mx-auto" src="/images/tree-icon.png" alt="tree icon" />
     </footer>
 </template>
 

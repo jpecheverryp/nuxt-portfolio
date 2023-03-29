@@ -1,26 +1,26 @@
 <template>
-    <section class="w-4/5 mx-auto">
-    <h2 class="mb-8 text-4xl text-center ">{{ heading }}</h2>
-    <div class="block mt-0 mb-24 mx-auto" v-for="project in projects" >
-      <project-card :projectData="project" :key="project.id" :reversed="project.id % 2 === 0" />
-    </div>
-  </section>
+    <section>
+        <h2 class="mb-8 text-4xl text-center ">{{ heading }}</h2>
+        <div class="block mt-0 mb-24 mx-auto" v-for="project in projects">
+            <project-card :projectData="project" :key="project.id" :reversed="project.id % 2 === 0" />
+        </div>
+    </section>
 </template>
 
 <script>
-  import projects from '~/data/projects'
+import projects from '~/data/projects'
 
-  export default {
+export default {
     props: {
-      heading: {
-        type: String,
-        required: true
-      }
+        heading: {
+            type: String,
+            required: true
+        }
     },
     data() {
-      return {
-        projects: projects
-      }
+        return {
+            projects: projects
+        }
     }
-  }
+}
 </script>

@@ -1,15 +1,15 @@
 <template>
-  <work-section heading="Projects" />
+    <work-section heading="Projects" />
 </template>
 
 <script>
 import workSection from '../../components/workSection.vue'
-  export default {
-  components: { workSection },
+export default {
+    components: { workSection },
     head() {
-      return {
-        title: '| Dev'
-      }
+        return {
+            title: '| Dev'
+        }
     }
-  }
+}
 </script>
